@@ -1,0 +1,39 @@
+.gridBoxHome {
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cadreBox {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.boxRight {
+    width: 75%;
+    height: 75%;
+    border: 2px solid black;
+    margin-right: 10%;
+}
+
+.boxLeft {
+    width: 75%;
+    height: 75%;
+    border: 2px solid black;
+    margin-left: 10%;
+}
+
+.boxTitle {
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.titles {
+    text-decoration: none;
+}
