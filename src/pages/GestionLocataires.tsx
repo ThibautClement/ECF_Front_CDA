@@ -1,9 +1,14 @@
 import React from 'react'
+import RentersList from '../component/lists/RentersList'
 
-function GestionLocataires() {
+function LocatairesPage() {
   return (
-    <div>GestionLocataires</div>
+    <>
+      <h1>Gestion Locataires</h1>
+        <RentersList/>
+    </> 
   )
+  
 }
 
-export default GestionLocataires
+export default LocatairesPage

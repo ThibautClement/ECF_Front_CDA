@@ -1,0 +1,30 @@
+{
+  "locataires": [
+    {
+      "id": 1,
+      "login": "papipoo",
+      "password": "123"
+    },
+    {
+      "id": 2,
+      "login": "pirjier",
+      "password": "132"
+    }
+  ],
+  "vehicules": [
+    {
+      "id": 1,
+      "marque": "BMW",
+      "modele": "Serie 1",
+      "immat": "456-CG-456",
+      "qualite": "A"
+    },
+    {
+      "id": 1,
+      "marque": "Merco",
+      "modele": "CLS",
+      "immat": "759-FK-498",
+      "qualite": "B"
+    }
+  ]
+}
