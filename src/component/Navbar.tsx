@@ -7,7 +7,7 @@ function Navbar() {
     <section className='navbar'>
         <img src={logo} className='logo' alt="logo" />
         <div className='titleBox'>
-          <div className='title' >ACCUEIL</div>
+          <div className='title'>ACCUEIL</div>
         </div>
     </section>
   )

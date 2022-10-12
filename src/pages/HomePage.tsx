@@ -1,42 +1,44 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import '../assets/style/HomePage.css'
+import Navbar from '../component/Navbar'
 
 function HomePage() {
   return (
     <>
+      <Navbar/>
       <section className='gridBoxHome'>
-        <Link to="/" className='cadreBox'>
-          <div className='boxLeft'>
+        <section className='cadreBox'>
+          <Link to="/gestvehicule" className='boxLeft'>
             <div className='boxTitle'>
               <h2 className='titles'>Gestion des véhicules</h2>
             </div>
             <img className='boxImg' src="" alt="" />
-          </div>
-        </Link>
-        <section className='cadreBox'>
-          <div className='boxRight'>
-            <div className='boxTitle'>
-              <h2>Gestion des locataires</h2>
-            </div>
-            <img className='boxImg' src="" alt="" />
-          </div>
+          </Link>
         </section>
         <section className='cadreBox'>
-          <div className='boxLeft'>
+          <Link to="/gestlocataires" className='boxRight'>
             <div className='boxTitle'>
-              <h2>Location des véhicules</h2>
+              <h2 className='titles'>Gestion des locataires</h2>
             </div>
-            <img className='boxImg' src="" alt="" />
-          </div>
+            <img className='boxImg' src="" alt=""/>
+          </Link>
         </section>
         <section className='cadreBox'>
-          <div className='boxRight'>
+          <Link to="/locavehicule" className='boxLeft'>
             <div className='boxTitle'>
-              <h2>Gestion des locations</h2>
+              <h2 className='titles'>Location des véhicules</h2>
+            </div>
+            <img className='boxImg' src="" alt=""/>
+          </Link>
+        </section>
+        <section className='cadreBox'>
+          <Link to="/gestlocations" className='boxRight'>
+            <div className='boxTitle'>
+              <h2 className='titles'>Gestion des locations</h2>
             </div>
             <img className='boxImg' src="" alt="" />
-          </div>
+          </Link>
         </section>
       </section>
     </>

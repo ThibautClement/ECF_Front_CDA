@@ -20,6 +20,8 @@
     height: 75%;
     border: 2px solid black;
     margin-right: 10%;
+    text-decoration: none;
+    color: black;
 }
 
 .boxLeft {
@@ -27,13 +29,11 @@
     height: 75%;
     border: 2px solid black;
     margin-left: 10%;
+    text-decoration: none;
+    color: black;
 }
 
 .boxTitle {
     text-align: center;
     border-bottom: 1px solid black;
-}
-
-.titles {
-    text-decoration: none;
 }
