@@ -1,7 +1,11 @@
 export type Vehicule = {
     id : number,
-    marque : string,
-    modele : string,
+    img : string,
     immat : string,
-    qualite : string
+    brand : string,
+    model : string,
+    state: string,
+    type: string,
+    priceDay: string,
+    available: string
 }

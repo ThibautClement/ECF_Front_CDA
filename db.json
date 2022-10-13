@@ -2,29 +2,84 @@
   "locataires": [
     {
       "id": 1,
-      "login": "papipoo",
-      "password": "123"
+      "name": "dfgdfgdf",
+      "firstname": "",
+      "phone": "",
+      "birthDate": "",
+      "email": "",
+      "password": "dfgdfgdf"
     },
     {
       "id": 2,
-      "login": "pirjier",
-      "password": "132"
+      "name": "Florian",
+      "firstname": "",
+      "phone": "",
+      "birthDate": "",
+      "email": "",
+      "password": "sdfs"
+    },
+    {
+      "id": 3,
+      "name": "Clément",
+      "firstname": "Thibaut",
+      "phone": "0644167471",
+      "birthDate": "06/24/2012",
+      "email": "clement.thibaut.guillaume@gmail.com"
+    },
+    {
+      "id": 4,
+      "name": "Clément",
+      "firstname": "",
+      "phone": "",
+      "birthDate": "",
+      "email": "",
+      "password": "dfgdfgdf"
     }
   ],
   "vehicules": [
     {
       "id": 1,
-      "marque": "BMW",
-      "modele": "Serie 1",
-      "immat": "456-CG-456",
-      "qualite": "A"
+      "img": "./src/assets/img/localib.png",
+      "immat": "456-BG-456",
+      "brand": "BMW",
+      "model": "Serie 1",
+      "state": "A",
+      "type": "moto",
+      "priceDay": 100,
+      "available": true
     },
     {
-      "id": 1,
-      "marque": "Merco",
-      "modele": "CLS",
-      "immat": "759-FK-498",
-      "qualite": "B"
+      "id": 2,
+      "img": "",
+      "immat": "dsfsdf",
+      "brand": "sdfsdf",
+      "model": "sdfsdfsd",
+      "state": "sdfsdf",
+      "type": "sdfsdf",
+      "priceDay": "sdfsdf",
+      "available": ""
+    },
+    {
+      "id": 3,
+      "img": "",
+      "immat": "452-FG-789",
+      "brand": "Mercedes",
+      "model": "CLS",
+      "state": "A",
+      "type": "car",
+      "priceDay": "250",
+      "available": ""
+    },
+    {
+      "id": 4,
+      "img": "",
+      "immat": "sdfsfs",
+      "brand": "sfsdf",
+      "model": "sdfsdf",
+      "state": "sdfsdf",
+      "type": "car",
+      "priceDay": "250",
+      "available": "on"
     }
   ]
 }
