@@ -2,23 +2,28 @@
     width: 100vw;
     display: flex;
     flex-direction: row;
-    border: 1px solid gray;
+    background-color: rgba(13, 109, 253);
+
 }
 
 .titleBox {
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 100px;
+    box-shadow: rgba(13, 109, 253, 0.3) 0px 5px, rgba(13, 109, 253, 0.2) 0px 10px, rgba(13, 109, 253, 0.1) 0px 15px, rgba(13, 109, 253, 0.05) 0px 20px;
 }
 
 .title {
     font-size: 30px;
+    font-weight: 500;
+    color: white;
+    margin-right: 100px;
 }
 
 .logo {
     width: 120px;
     height: 100px;
     background-color: black;
+    box-shadow: rgba(13, 109, 253, 0.3) 0px 5px, rgba(13, 109, 253, 0.2) 0px 10px, rgba(13, 109, 253, 0.1) 0px 15px, rgba(13, 109, 253, 0.05) 0px 20px;
 }

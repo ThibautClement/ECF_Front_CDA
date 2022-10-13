@@ -1,5 +1,8 @@
 export type Locataire = {
     id : number,
-    login : string,
-    password : string
+    name: string,
+    firstname: string,
+    phone : string,
+    birthDate: string,
+    email: string
 }

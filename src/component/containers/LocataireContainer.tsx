@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import { Locataire } from '../../models/locataireModel'
 
 type locataireContainerProps = {
-    locataire : Locataire
-    deleteLocataire : Function
-    updateLocataire : Function
+  locataire : Locataire
+  deleteLocataire : Function
+  updateLocataire : Function
 }
 
 const LocataireContainer = (props : locataireContainerProps) => {
@@ -17,13 +17,13 @@ const LocataireContainer = (props : locataireContainerProps) => {
     /**
      * Permet de mettre à jour les informations du locataire
      */
-    const [locataire, setLocataire] = useState({login: "", password: ""})
+    const [locataire, setLocataire] = useState({id: 0, name: "", firstname: "", phone: "", birthDate: "", email: ""})
 
     /**
      * Permet d'envoyer l'id du locataire à supprimer
      */
     const deleteLocataire = () => {
-        props.deleteLocataire(props.locataire.id)
+      props.deleteLocataire(props.locataire.id)
     }
 
     /**
@@ -63,8 +63,11 @@ const LocataireContainer = (props : locataireContainerProps) => {
       {(!updating) ? 
         <div>
           <span>{props.locataire.id}</span>
-          <span>{props.locataire.login}</span>
-          <span>{props.locataire.password}</span>
+          <span>{props.locataire.name}</span>
+          <span>{props.locataire.firstname}</span>
+          <span>{props.locataire.phone}</span>
+          <span>{props.locataire.birthDate}</span>
+          <span>{props.locataire.email}</span>
           <div>
             <button onClick={deleteLocataire}>Supprimer</button>
             <button onClick={updateLocataire}>Modifier</button>
@@ -72,8 +75,11 @@ const LocataireContainer = (props : locataireContainerProps) => {
         </div> :
         <div>
           <span>{props.locataire.id}</span>
-          <input placeholder={props.locataire.login} name="login" onChange={(event) => handleChange(event)}></input>
-          <input placeholder={props.locataire.password} name="password" onChange={(event) => handleChange(event)}></input>
+          <input placeholder={props.locataire.name} name="name" onChange={(event) => handleChange(event)}></input>
+          <input placeholder={props.locataire.firstname} name="password" onChange={(event) => handleChange(event)}></input>
+          <input placeholder={props.locataire.phone} name="password" onChange={(event) => handleChange(event)}></input>
+          <input placeholder={props.locataire.birthDate} name="password" onChange={(event) => handleChange(event)}></input>
+          <input placeholder={props.locataire.email} name="password" onChange={(event) => handleChange(event)}></input>
           <div>
             <button onClick={cancel}>Annuler</button>
             <button onClick={validUpdateLocataire}>Valider</button>

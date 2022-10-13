@@ -1,8 +1,12 @@
 import React from 'react'
+import Navbar from '../component/Navbar'
 
 function LocationVehicule() {
   return (
-    <div>LocationVehicule</div>
+    <>
+      <Navbar data={"LOCATION VEHICULES"}/>
+      <div>Location Vehicules</div>
+    </>
   )
 }
 
