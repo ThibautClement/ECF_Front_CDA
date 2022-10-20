@@ -18,12 +18,19 @@
     font-size: 30px;
     font-weight: 500;
     color: white;
-    margin-right: 100px;
+    padding-right: 50px;
 }
 
 .logo {
     width: 120px;
     height: 100px;
     background-color: black;
+    box-shadow: rgba(13, 109, 253, 0.3) 0px 5px, rgba(13, 109, 253, 0.2) 0px 10px, rgba(13, 109, 253, 0.1) 0px 15px, rgba(13, 109, 253, 0.05) 0px 20px;
+}
+
+.fleche {
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
     box-shadow: rgba(13, 109, 253, 0.3) 0px 5px, rgba(13, 109, 253, 0.2) 0px 10px, rgba(13, 109, 253, 0.1) 0px 15px, rgba(13, 109, 253, 0.05) 0px 20px;
 }

@@ -6,6 +6,7 @@ import GestionVehicule from './pages/GestionVehicule';
 import GestionLocation from './pages/GestionLocation';
 import LocationVehicule from './pages/LocationVehicule';
 import LocatairesPage from './pages/GestionLocataires';
+import LocationAssign from './pages/LocationAssign';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/gestvehicule' element={<GestionVehicule/>} />
         <Route path='/gestlocations' element={<GestionLocation/>} />
         <Route path='/locavehicule' element={<LocationVehicule/>} />
+        <Route path='/locavehicule2' element={<LocationAssign/>} />
         <Route path='/gestlocataires' element={<LocatairesPage/>} />
       </Routes>
     </BrowserRouter>

@@ -3,10 +3,11 @@ import { Vehicule } from '../../models/vehiculeModel'
 import { vehiculeService } from '../../services/VehiculesService'
 import { AddVehicule } from '../add/AddVehicule'
 import CarsContainer from '../containers/CarsContainer'
+import '../../assets/style/VehiculeList.css'
 
 const VehiculeList = () => {
 
-  const [vehicule, setVehicule] = useState<Vehicule>({id: 0, img:"", immat:"", brand:"", model:"", state: "", type: "", priceDay: "0", available: "true"})
+  const [vehicule, setVehicule] = useState<Vehicule>({id: 0, img:"", immat:"", brand:"", model:"", state: "", type: "", priceDay: 0, available: true})
 
   const [vehicules, setVehicules] = useState<Vehicule[]>([])
 
@@ -52,9 +53,12 @@ const VehiculeList = () => {
   return (
     <>
       <AddVehicule addNewVehicule={addNewVehicule}/>
-      {(vehicules) && vehicules.map((vehicule : Vehicule, index : number) => {
-        return <CarsContainer key={index} vehicule={vehicule} deleteVehicule={deleteVehicule} updateVehicule={updateVehicule}/>
-      })}
+      <div className='gridContainer'>
+        {(vehicules) && vehicules.map((vehicule : Vehicule, index : number) => {
+          return (
+            <CarsContainer key={index} vehicule={vehicule} deleteVehicule={deleteVehicule} updateVehicule={updateVehicule}/>
+        )})}
+      </div>
     </>
   )
 }

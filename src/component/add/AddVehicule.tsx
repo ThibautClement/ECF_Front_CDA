@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import '../../assets/style/AddVehicule.css'
+import img from '../../assets/img/img.png'
 
 export const AddVehicule = (props : any) => {
 
@@ -24,20 +26,49 @@ export const AddVehicule = (props : any) => {
 
   return (
     <>
-      <div>
-        <h3>Ajouter un vehicule</h3>
-        <form onSubmit={(event) => addNewVehicule(event)}>
-          <input type="file" name="img" placeholder="Image" onChange={(event) => handleChange(event)} />
-          <input type="text" name="immat" placeholder="Immatriculation" onChange={(event) => handleChange(event)} />
-          <input type="text" name="brand" placeholder="Marque" onChange={(event) => handleChange(event)} />
-          <input type="text" name="model" placeholder="Modele" onChange={(event) => handleChange(event)} />
-          <input type="text" name="state" placeholder="Etat" onChange={(event) => handleChange(event)} />
-          <input type="text" name="type" placeholder="Type" onChange={(event) => handleChange(event)} />
-          <input type="text" name="priceDay" placeholder="Prix" onChange={(event) => handleChange(event)} />
-          <input type="checkbox" name="available" placeholder="Disponible" onChange={(event) => handleChange(event)} />
-          <button type="submit">Valider</button>
+      <section className='topPage'>
+        <form onSubmit={(event) => addNewVehicule(event)} className='formBox'>
+          <div className='addBox'>
+            <div className='imgInput'>
+              <label htmlFor="file" className='labelImg'>
+                <img src={img} alt="" className='img'/>
+              </label>
+              <input id='file' className='inputFile' type="file" name="img" onChange={(event) => handleChange(event)} />
+            </div>
+            <div className='labelInput'>
+              <div className='labelList'>
+                <label className='label'>Immat : </label>
+                <label className='label'>Marque : </label>
+                <label className='label'>Modele : </label>
+                <label className='label'>Etat : </label>
+                <label className='label'>Type : </label>
+              </div>
+              <div className='inputList'>
+                <input className='input' type="text" name="immat" onChange={(event) => handleChange(event)} />
+                <input className='input' type="text" name="brand" onChange={(event) => handleChange(event)} />
+                <input className='input' type="text" name="model" onChange={(event) => handleChange(event)} />
+                <input className='input' type="text" name="state" onChange={(event) => handleChange(event)} />
+                <input className='input' type="text" name="type" onChange={(event) => handleChange(event)} />
+              </div>
+            </div>
+            <div className='rightInBox'>
+              <div className='prix'>
+                <label>Prix/jour : </label>
+                <div>
+                  <input className='input2' type="text" name="priceDay" onChange={(event) => handleChange(event)} />
+                </div>
+              </div>
+              <div className='dispo'>
+                <label>Dispo : </label>
+                <input type="checkbox" name="available" onChange={(event) => handleChange(event)} />
+              </div>
+              <div className='btnAjout'>
+                <button type="submit">Ajouter</button>
+              </div>
+            </div>
+          </div>
         </form>
-      </div>
+      </section>
     </>
   )
 }
