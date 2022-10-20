@@ -76,10 +76,10 @@ const LocataireContainer = (props : locataireContainerProps) => {
         <div>
           <span>{props.locataire.id}</span>
           <input placeholder={props.locataire.name} name="name" onChange={(event) => handleChange(event)}></input>
-          <input placeholder={props.locataire.firstname} name="password" onChange={(event) => handleChange(event)}></input>
-          <input placeholder={props.locataire.phone} name="password" onChange={(event) => handleChange(event)}></input>
-          <input placeholder={props.locataire.birthDate} name="password" onChange={(event) => handleChange(event)}></input>
-          <input placeholder={props.locataire.email} name="password" onChange={(event) => handleChange(event)}></input>
+          <input placeholder={props.locataire.firstname} name="firstname" onChange={(event) => handleChange(event)}></input>
+          <input placeholder={props.locataire.phone} name="phone" onChange={(event) => handleChange(event)}></input>
+          <input placeholder={props.locataire.birthDate} name="birthDate" onChange={(event) => handleChange(event)}></input>
+          <input placeholder={props.locataire.email} name="email" onChange={(event) => handleChange(event)}></input>
           <div>
             <button onClick={cancel}>Annuler</button>
             <button onClick={validUpdateLocataire}>Valider</button>
